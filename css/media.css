@@ -1,0 +1,295 @@
+/* 320px—480px: Mobile devices */
+/* 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+    margin: auto;
+  }
+  .header-content {
+    display: none;
+  }
+  header .container .dark-mode {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+  header .container .dark-mode i:last-child {
+    display: block;
+  }
+}
+481px—768px: iPads, Tablets */
+/*
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 700px;
+    margin: auto;
+  }
+  .header-content {
+    display: none;
+  }
+  header .container .dark-mode {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+  header .container .dark-mode i:last-child {
+    display: block;
+  }
+}
+ 769px—1024px: Small screens, laptops 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+  .header-content {
+    display: none;
+  }
+  header .container .dark-mode {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+  header .container .dark-mode i:last-child {
+    display: block;
+  }
+  .landing {
+    height: 62vh;
+  }
+}
+*/
+
+/* very small */
+@media (max-width: 767px) {
+  .container {
+    width: 600px;
+    margin: auto;
+  }
+  header .container {
+    position: relative;
+  }
+  .landing {
+    height: auto;
+    text-align: center;
+  }
+  .landing .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .landing .container .land-text {
+    width: 100%;
+  }
+  .landing .container .land-text .land-btns{
+    justify-content: center;
+  }
+  .landing .container .land-text h2 {
+    padding-top: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+  .landing .container .land-img {
+    width: 100%;
+    margin-top: 7rem;
+  }
+  header .container .header-content {
+    display: none;
+    /* need js */
+    background-color: #e9c0c0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+  }
+  header .container .header-content .fa-x {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+  }
+  header .container .header-content ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  header .container .header-content ul li {
+    padding: 8px 0;
+  }
+  header .container .header-content ul li a:hover {
+    color: black;
+  }
+  header .container .dark-mode i:last-child {
+    display: block;
+  }
+  header .container .dark-mode {
+    display: flex;
+    width: 4rem;
+    justify-content: space-between;
+  }
+  .chefs .container .chefs-list{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .chefs .container .chefs-list .chef{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .contact .container .info{
+    flex-direction: column;
+    
+  }
+  .contact .container .info .item{
+    width: 100%;
+  }
+  .contact .container form input[name="Name"]{
+    width: 100%;
+  }
+  .contact .container form input[name="Email"]{
+    width: 100%;
+  }
+  footer .container{
+    flex-wrap: wrap;
+  }
+  footer .container .social {
+    max-width: 100%;
+  }
+
+  footer .container .subscrbe{
+    max-width: 100%;
+
+  }
+  footer .container .get{
+    max-width: 100%;
+
+  }
+  .gallary .container .gallaty-items .item{
+    max-width: 100%;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+
+  header .container .dark-mode i:last-child {
+    display: block;
+  }
+  header .container .dark-mode {
+    display: flex;
+    width: 4rem;
+    justify-content: space-between;
+  }
+  header .container .header-content {
+    display: none;
+  }
+  .contact .container .info{
+    flex-direction: column;
+    
+  }
+  .contact .container .info .item{
+    width: 100%;
+  }
+  .contact .container form input[name="Name"]{
+    width: 100%;
+  }
+  .contact .container form input[name="Email"]{
+    width: 100%;
+  }
+  footer .container{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .container .social {
+    max-width: 45%;
+    order: 0;
+  }
+
+  footer .container .subscrbe{
+    max-width: 100%;
+    order: 2;
+
+  }
+  footer .container .get{
+    max-width: 45%;
+    order: 1;
+  }
+  .gallary .container .gallaty-items .item{
+    max-width: 48%;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+
+  header .container .dark-mode .fa-bars {
+    display: block;
+  }
+  .landing .container {
+    flex-direction: row;
+  }
+  .contact .container .info{
+    flex-direction: row;
+    
+  }
+  .contact .container .info .item{
+    width: 49%;
+  }
+  .contact .container form input[name="Name"]{
+    width: 49%;
+  }
+  .contact .container form input[name="Email"]{
+    width: 49%;
+  }
+  footer .container{
+    flex-wrap: nowrap;
+  }
+  footer .container .social {
+    max-width: 25%;
+  }
+
+  footer .container .subscrbe{
+    max-width: 50%;
+
+  }
+  footer .container .get{
+    max-width: 25%;
+    order: 6;
+  }
+  .gallary .container .gallaty-items .item{
+    max-width: 32%;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: auto;
+  }
+  .landing .container {
+    flex-direction: row;
+  }
+  header .container .header-content {
+    display: block;
+  }
+  header .container .header-content ul li a:hover::after {
+    display: block;
+  }
+  .contact .container .info{
+    flex-direction: row;
+    
+  }
+  .contact .container .info .item{
+    width: 49%;
+  }
+}
+@media (max-width: 620px){
+  .container{
+    width: 300px;
+  }
+}
